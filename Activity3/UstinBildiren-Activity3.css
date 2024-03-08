@@ -1,0 +1,40 @@
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:white;
+	float: left;
+}
+
+#griffen {
+	float: left;
+}
+
+#image img{
+	
+	width: 250px;
+	height: auto;
+	float: left;
+	margin: 10px;
+}
+
+#title {
+
+	float: left;
+}
+
+#copyright{
+	text-align: center;
+}
+
+#footer {
+	text-align: center;
+}
+
+.content {
+	width: 70%;
+}
+
