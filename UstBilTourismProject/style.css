@@ -5,6 +5,9 @@ main {
     display: block; 
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
   }
   
 h1{
@@ -444,6 +447,22 @@ ul{
     	font-size: 1rem;
     	cursor: pointer;
 	}
+}
+
+.toursinfo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.toursinfo section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.toursinfo img {
+    width: 100%; 
+    height: auto;
 }
 
 
