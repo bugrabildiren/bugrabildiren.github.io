@@ -5,9 +5,6 @@ main {
     display: block; 
     margin-left: 20px;
     margin-right: 20px;
-    text-align: center;
-    margin: auto;
-    max-width: 800px;
   }
   
 h1{
@@ -139,7 +136,7 @@ ul{
 	background-color: #ffffff;
 }
 
-/*responsive*/
+/responsive/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -449,21 +446,115 @@ ul{
 	}
 }
 
+.blogmain {
+    flex: 1;  
+}
+
+.blogmain h1{
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #333;
+}
+.blogmain h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.blogmain p{
+    display: inline-block;
+    padding: 10px 20px;
+    color: fff;
+    font-size:  19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.toursmain {
+    flex: 1;  
+}
+
+.toursmain h1{
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #333;
+}
+.toursmain h2{
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.toursmain h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.toursmain p{
+    display: inline-block;
+    padding: 10px 20px;
+    color: fff;
+    font-size:  19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.tourcalendarmain {
+    flex: 1;  
+}
+
+.tourcalendarcalendarmain h1{
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #333;
+}
+.tourcalendarmain h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tourcalendarmain p{
+    display: inline-block;
+    padding: 10px 20px;
+    color: fff;
+    font-size:  19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+/* Main içeriğini ortala */
+.indexmain {
+    text-align: center;
+    margin: auto;
+    max-width: 800px; /* İçeriğin maksimum genişliğini ayarlayın */
+}
+
+/* Toursinfo içeriğini düzenle */
 .toursinfo {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
 
+/* Toursinfo içindeki her bir sectionı düzenle */
 .toursinfo section {
     flex: 1;
-    margin: 5 10px;
+    margin: 0 10px;
 }
 
+/* Resimleri aynı boyuta eşitle */
 .toursinfo img {
-    width: 100%; 
-    height: auto;
+    width: 100%; /* Resimlerin genişliğini %100 yaparak ekrana sığmasını sağlar */
+    height: auto; /* Oranları koruyarak resimlerin boyutunu otomatik olarak ayarlar */
 }
-
-
-
