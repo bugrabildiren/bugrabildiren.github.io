@@ -52,7 +52,6 @@
       }
       echo "</ul>";
     } else {
-      echo "<ul>";
       foreach ($errors as $error) {
         echo "<li>" . $error . "</li>";
       }
