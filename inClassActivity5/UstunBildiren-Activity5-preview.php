@@ -52,13 +52,10 @@
       }
       echo "</ul>";
     } else {
-      echo "<h2>Error!</h2>";
       echo "<ul>";
       foreach ($errors as $error) {
         echo "<li>" . $error . "</li>";
       }
-      echo "</ul>";
-      echo "<p>Form is not provided.</p>";
     }
   } else {
     header("Location: UstunBildiren-Activity5.php");
