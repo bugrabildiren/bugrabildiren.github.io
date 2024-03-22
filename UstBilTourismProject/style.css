@@ -533,28 +533,25 @@ ul{
     transition: 0.3s ease;
 }
 
-/* Main içeriğini ortala */
 .indexmain {
     text-align: center;
     margin: auto;
-    max-width: 800px; /* İçeriğin maksimum genişliğini ayarlayın */
+    max-width: 800px; 
 }
 
-/* Toursinfo içeriğini düzenle */
 .toursinfo {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
 
-/* Toursinfo içindeki her bir sectionı düzenle */
 .toursinfo section {
     flex: 1;
     margin: 0 10px;
 }
 
-/* Resimleri aynı boyuta eşitle */
+
 .toursinfo img {
-    width: 100%; /* Resimlerin genişliğini %100 yaparak ekrana sığmasını sağlar */
-    height: auto; /* Oranları koruyarak resimlerin boyutunu otomatik olarak ayarlar */
+    width: 100%; 
+    height: auto; 
 }
