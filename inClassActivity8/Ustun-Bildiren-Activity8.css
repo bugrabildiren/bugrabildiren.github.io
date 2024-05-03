@@ -1,0 +1,54 @@
+/* Target the form element */
+form {
+    /* Set some padding to create space around the elements */
+    padding: 20px;
+    /* Add a border to create a distinction */
+    border: 1px solid #ccc;
+    /* Set a background color to distinguish the form from the background */
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the labels */
+  label {
+    /* Display the labels inline-block to have them on the same line as the inputs */
+    display: inline-block;
+
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style the inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+input:required:invalid {
+    border: 1px solid red;
+}
