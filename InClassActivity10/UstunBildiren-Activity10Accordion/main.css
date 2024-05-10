@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+	width: 650px;
+	margin: 0 auto;
+	padding: 15px 25px;	
+}
+h1 { 
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+ul {
+	padding-left: 45px;
+}
+li {
+	padding-bottom: .5em;
+}
+p {
+	padding-bottom: .5em;
+}
+
+#accordion {
+    width: 100%;
+}
+
+#accordion h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #ccc;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+}
+
+#accordion div {
+    padding: 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+}
