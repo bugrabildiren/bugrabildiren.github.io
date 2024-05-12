@@ -3,179 +3,154 @@
 
 
 <head>
-<title>UstBil Tourism - FAQ</title>
+  <title>UstBil Tourism - FAQ</title>
 
-<meta charset="utf-8">
-<link rel="shortcut icon" type="image/png" href="image/favicon.ico"/>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="image/favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <script src="js/faq.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">UstBil</a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="tourcalendar.html">Tour Calender</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="faq.html">Faq</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html" class="logo">UstBil</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="tourcalendar.html">Tour Calender</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-    
+  <main>
+
     <body>
-        <div class="wrapper">
-          <h1>Frequently Asked Questions (FAQ)</h1>
-    
-          <div class="faq">
-            <button class="accordion">
-                What is UstBil Tourism ?
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-              <p>
-                UstBil Turizm is a tourism agency located at https://www.ustbiltourism.com/ that helps you with your travel needs. 
-                We offer many services such as flight tickets, hotel reservations, tour packages and visa procedures.
-              </p>
-            </div>
-          </div>
-    
-          <div class="faq">
-            <button class="accordion">
-                Why should I choose UstBil Tourism ?
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-              <p>
-                We work to offer you the most suitable travel options with our experienced and expert team. 
-                We attach importance to customer satisfaction and always strive to provide the best service.
-              </p>
-            </div>
-          </div>
-    
-          <div class="faq">
-            <button class="accordion">
-                What services does UstBil Tourism offer ?
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-              <p>
-                UstBil Tourism offers the following services:
-              </p>
-              <li>Flight ticket and accommodation reservation.</li>
-              <li>Tour packages and custom travel planning.</li>
-              <li>Visa procedures.</li>
-              <li>Travel insurance.</li>
-              <li>Transfer and guidance service.</li>
-            </div>
-          </div>
-    
-          <div class="faq">
-            <button class="accordion">
-                What distinguishes you from other travel agencies ?
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-              <p>
-                <li>Personalized service: Each itinerary is customized to your specific needs and wishes.</li>
-                <li>Experience and expertise.</li>
-                <li>Competitive prices: We offer the best travel options at the most affordable prices.</li>
-                <li>Customer satisfaction: The satisfaction of our customers is our top priority.</li>
-                
-              </p>
-            </div>
-          </div>
-    
-          <div class="faq">
-            <button class="accordion">
-                What should I pay attention to when planning a trip ?
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="pannel">
-              <p>
-                Here are some important points to consider when planning a trip:
-              </p>
-                <li>Your travel dates: Your travel dates may cause prices and weather conditions to be significantly affected.</li>
-                <li>Therefore, it is important to determine your travel dates in advance and plan accordingly.</li>
-                <li>Your travel budget: Your travel budget plays an important role in determining your travel options.</li>
-                <li>It is important to determine your budget in advance and plan accordingly.</li>
-                <li>Your travel purpose: Your travel purpose will significantly impact your travel plan. For example, if you are planning a vacation for relaxation, you need to choose a quiet and peaceful place.</li>
-                <li>Visa and passport: It is important to check whether a visa is required for the country you will travel to and prepare the necessary documents in advance.</li>
-                <li>Travel insurance: It is important to have travel insurance to avoid any mishaps or health problems.</li>
-            </div>
-        </div>
-        </div>
-        </div>
-    
-        <script>
-          var acc = document.getElementsByClassName("accordion");
-          var i;
-    
-          for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-              this.classList.toggle("active");
-              this.parentElement.classList.toggle("active");
-    
-              var pannel = this.nextElementSibling;
-    
-              if (pannel.style.display === "block") {
-                pannel.style.display = "none";
-              } else {
-                pannel.style.display = "block";
-              }
-            });
-          }
-        </script>
-      </body>
+      <div class="wrapper">
+        <h1>Frequently Asked Questions (FAQ)</h1>
 
-    </main>
+        <div id="faq">
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Pages</h4>
-                    <ul>
-                        <li><a href="index.html">Home Page</a></li>
-                        <li><a href="tours.html">Tours</a></li>
-                        <li><a href="tourcalendar.html">Tour Calender</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="faq.html">Faq</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Info</h4>
-                    <p>UstBil Tourism is a tourism agency that works to make your dream travels come true. 
-                        We work to offer you the most suitable travel options with our experienced and expert team. 
-                        We attach importance to customer satisfaction and always strive to provide the best service.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/slckstn/" target=”_blank”><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.instagram.com/bugrabildirenn/" target=”_blank”><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/Slckstn" target=”_blank”><i class="fab fa-github"></i></a>
-                        <a href="https://github.com/bugrabildiren" target=”_blank”><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
+          <h3><a href="#accordion-1">What is UstBil Tourism ?</a> <i class="fa-solid fa-chevron-down"></i></h3>
+          <div id="accordion-1">
+            <p>
+              UstBil Turizm is a tourism agency located at https://www.ustbiltourism.com/ that helps you with your
+              travel needs.
+              We offer many services such as flight tickets, hotel reservations, tour packages and visa procedures.
+            </p>
+          </div>
+
+          <h3><a href="#accordion-2">Why should I choose UstBil Tourism ?</a><i class="fa-solid fa-chevron-down"></i>
+          </h3>
+          <div id="accordion-2">
+            <p>
+              We work to offer you the most suitable travel options with our experienced and expert team.
+              We attach importance to customer satisfaction and always strive to provide the best service.
+            </p>
+          </div>
+
+
+
+          <h3><a href="#accordion-3"> What services does UstBil Tourism offer ?</a><i
+              class="fa-solid fa-chevron-down"></i></h3>
+          <div id="accordion-3">
+            <p>
+              UstBil Tourism offers the following services:
+
+              <li> Flight ticket and accommodation reservation.</li>
+              <li> Tour packages and custom travel planning.</li>
+              <li> Visa procedures.</li>
+              <li> Travel insurance.</li>
+              <li> Transfer and guidance service.</li>
+            </p>
+          </div>
+
+
+          <h3><a href="#accordion-4"> What distinguishes you from other travel agencies ?</a><i
+              class="fa-solid fa-chevron-down"></i></h3>
+          <div id="accordion-4">
+            <p>
+              <li>Personalized service: Each itinerary is customized to your specific needs and wishes.</li>
+              <li>Experience and expertise.</li>
+              <li>Competitive prices: We offer the best travel options at the most affordable prices.</li>
+              <li>Customer satisfaction: The satisfaction of our customers is our top priority.</li>
+
+            </p>
+          </div>
+
+          <h3><a href="#accordion-5"> What should I pay attention to when planning a trip ?</a><i
+              class="fa-solid fa-chevron-down"></i></h3>
+          <div id="accordion-5">
+            <p>
+              Here are some important points to consider when planning a trip:
+            </p>
+            <li>Your travel dates: Your travel dates may cause prices and weather conditions to be significantly
+              affected.</li>
+            <li>Therefore, it is important to determine your travel dates in advance and plan accordingly.</li>
+            <li>Your travel budget: Your travel budget plays an important role in determining your travel options.</li>
+            <li>It is important to determine your budget in advance and plan accordingly.</li>
+            <li>Your travel purpose: Your travel purpose will significantly impact your travel plan. For example, if you
+              are planning a vacation for relaxation, you need to choose a quiet and peaceful place.</li>
+            <li>Visa and passport: It is important to check whether a visa is required for the country you will travel
+              to and prepare the necessary documents in advance.</li>
+            <li>Travel insurance: It is important to have travel insurance to avoid any mishaps or health problems.</li>
+          </div>
         </div>
-   </footer>
- 
+      </div>
 
-        
+
+    </body>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="tourcalendar.html">Tour Calender</a></li>
+            <li><a href="blog.html">Blog</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <p>UstBil Tourism is a tourism agency that works to make your dream travels come true.
+            We work to offer you the most suitable travel options with our experienced and expert team.
+            We attach importance to customer satisfaction and always strive to provide the best service.</p>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/slckstn/" target=”_blank”><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/bugrabildirenn/" target=”_blank”><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Slckstn" target=”_blank”><i class="fab fa-github"></i></a>
+            <a href="https://github.com/bugrabildiren" target=”_blank”><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
 </body>

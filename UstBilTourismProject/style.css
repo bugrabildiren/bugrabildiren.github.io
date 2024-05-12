@@ -195,24 +195,12 @@ ul{
 .accordion:hover {
   background-color: #f1f7f5;
 }
-.pannel {
-  padding: 0 2rem 2.5rem 2rem;
-  background-color: white;
-  overflow: hidden;
-  background-color: #fffffffe;
-  display: none;
-}
-.pannel p {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.2rem;
-  line-height: 1.4;
-}
 
-.faq {
+#faq {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 10px 0;
 }
-.faq.active {
+#faq.active {
   border: none;
 }
 
@@ -332,7 +320,7 @@ ul{
 }
 
 .aboutus-header h1 {
-	font size: 50px;
+	font-size: 50px;
 	color: #000;
 	margin-bottom : 25px;
 	position: relative;
@@ -474,13 +462,16 @@ ul{
 }
 
 .toursmain {
-    flex: 1;  
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .toursmain h1{
-        font-size: 32px;
-        margin-bottom: 15px;
-        color: #333;
+    background:grey no-repeat 7px center;
+	margin: 0;
+	padding: 3px 0 3px 25px;
+	border: solid orange 1px;
+	color: orange;
 }
 .toursmain h2{
     text-align: center;
