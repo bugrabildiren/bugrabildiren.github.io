@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>206-Homework2</title>
+    <style>
+        .aboutMe {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .color-button, .picture-button, .form-button {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .input-field {
+            font-size: 20px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aboutMe" id="aboutMe">
+        Name: Buğra<br>
+        Surname: Bildiren<br>
+        Student Number: 20050111022<br>
+        Age: 22
+    </div>
+    <input type="file" id="fileInput" accept=".txt">
+    <button class="color-button" id="changeColorButton">Change Color !</button>
+
+    <div>
+        <img id="image1" src="image1.jpg" alt="Image 1" style="width:200px;">
+        <img id="image2" src="image2.png" alt="Image 2" class="hidden" style="width:200px;">
+    </div>
+    <button class="picture-button" id="changePictureButton">Change Image !</button>
+
+    <form id="rectangleForm">
+        <label for="length">Length:</label>
+        <input type="text" id="length" name="length" class="input-field"><br><br>
+        <label for="width">Width:</label>
+        <input type="text" id="width" name="width" class="input-field"><br><br>
+        <button class="form-button" type="submit">Calculate Area !</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        let colors = [];
+
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const contents = e.target.result;
+                    colors = contents.split(/\r?\n/).filter(Boolean);
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        document.getElementById('changeColorButton').addEventListener('click', function() {
+            if (colors.length > 0) {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                document.getElementById('aboutMe').style.color = randomColor;
+            }
+        });
+
+        document.getElementById('changePictureButton').addEventListener('click', function() {
+            const image1 = document.getElementById('image1');
+            const image2 = document.getElementById('image2');
+            if (image1.classList.contains('hidden')) {
+                image1.classList.remove('hidden');
+                image2.classList.add('hidden');
+            } else {
+                image1.classList.add('hidden');
+                image2.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('rectangleForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const length = document.getElementById('length').value;
+            const width = document.getElementById('width').value;
+            const resultDiv = document.getElementById('result');
+
+            if (!isNaN(length) && !isNaN(width) && length > 0 && width > 0) {
+                const area = length * width;
+                resultDiv.textContent = `Area of ​rectangle: ${area}`;
+            } else {
+                resultDiv.textContent = 'Please enter valid numerical values !';
+            }
+        });
+    </script>
+</body>
+</html>
