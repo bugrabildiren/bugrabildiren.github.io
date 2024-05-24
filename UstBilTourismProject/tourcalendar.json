@@ -1,0 +1,49 @@
+{
+    "tours": [
+        {
+            "city": "Mersin",
+            "month": "June",
+            "details": "Start your June journey in Mersin city center, visiting historical sites such as Yumuktepe Höyüğü, Soli Antik Kenti, and the Mersin Atatürk Evi Müzesi. Enjoy local delicacies like tantuni and kerebiç. Spend a day at Kızkalesi, combining historical exploration with relaxing beach time. Take a boat tour to fully appreciate the beauty of Kızkalesi and its surroundings. Don't miss a sunset stroll along the Mersin Marina, enjoying the vibrant atmosphere and seafront views."
+        },
+        {
+            "city": "Mersin - Tarsus ",
+            "month": "July",
+            "details": "In July, head to Tarsus, a town rich in history and culture. Visit the St. Paul Kuyusu and Anıt Müzesi, exploring the significance of St. Paul in the region. Discover the Yedi Uyurlar Mağarası, steeped in legend and mystique. The Tarsus Müzesi offers insights into the area's rich archaeological heritage. Cool off with a visit to the Eshab-ı Kehf Cave, a place of historical and religious importance. Enjoy a relaxing evening at Tarsus Waterfall, a serene spot perfect for unwinding."
+        },
+        {
+            "city": "Mersin- Anamur",
+            "month": "August",
+            "details": "Spend August in Anamur, blending natural beauty with historical exploration. Explore the ancient ruins of Anamuryum Antik Kenti, a site that offers a glimpse into the region's past. Enjoy the pristine beaches of Anamur, ideal for sunbathing and swimming. Visit the famous Musa Ağacı, an ancient tree with a fascinating story. Indulge in local fruits, such as the delicious Anamur bananas and the juicy Mut apricots. Take a trip to Mamure Castle, a well-preserved medieval fortress that offers stunning views of the coastline."
+        },
+        {
+            "city": "Antalya",
+            "month": "June",
+            "details": "Start your June exploration in the historic Kaleiçi, Antalya's old town, with its narrow streets, ancient walls, and charming harbor. Visit the iconic Hadrian's Gate and the Antalya Museum to delve into the city's rich history. Spend a day at Konyaaltı Beach, enjoying the sun and sea. Head to the Duden Waterfalls for a refreshing natural escape and take a boat tour from the harbor to see the stunning coastline from the water."
+        },
+        {
+            "city": "Antalya",
+            "month": "July",
+            "details": "In July, visit the ancient city of Perge to explore its well-preserved ruins and learn about its history. Spend a day at the world-famous Lara Beach, known for its fine sand and crystal-clear waters. Don't miss the chance to visit the Antalya Aquarium, one of the largest in Europe, and stroll through the Karaalioglu Park for breathtaking views of the Mediterranean Sea. End your days with a leisurely walk and dinner in the vibrant Atatürk Boulevard area."
+        },
+        {
+            "city": "Antalya",
+            "month": "August",
+            "details": "In August, explore the beautiful beaches and ancient ruins of the Olympos and Cirali areas. Discover the ancient city of Olympos, nestled in a picturesque valley, and relax on Cirali Beach. Experience the unique natural phenomenon of the Chimera flames. Take a day trip to the stunning Saklikent Gorge for an adventurous hike through its narrow, water-filled passages. Wrap up your summer with a visit to the scenic Koprulu Canyon for rafting and outdoor activities amidst breathtaking nature."
+        },
+        {
+            "city": "Muğla - Bodrum",
+            "month": "June",
+            "details": "Start your June trip in Bodrum, exploring its historical sites like Bodrum Castle and the Museum of Underwater Archaeology. Enjoy the vibrant nightlife and beautiful beaches such as Bitez and Gumbet. Visit the charming town of Akyaka, known for its scenic Azmak River and kite surfing opportunities. Don’t miss the opportunity to take a boat tour to the nearby Cleopatra Island, famed for its unique sand and clear waters."
+        },
+        {
+            "city": "Muğla - Fethiye",
+            "month": "July",
+            "details": "In July, head to Fethiye, a perfect blend of nature and history. Visit the stunning Oludeniz Beach and the Blue Lagoon, ideal for swimming and paragliding. Explore the ancient ruins of Kayaköy, a ghost village with a fascinating history. Take a day trip to the Saklikent Gorge for a refreshing hike through its cool waters. End your days with a sunset cruise around the Twelve Islands, enjoying the serene beauty of the Aegean Sea."
+        },
+        {
+            "city": "Muğla - Marmaris",
+            "month": "August",
+            "details": "Spend August in the tranquil town of Datça. Visit the ancient city of Knidos, located at the tip of the Datça Peninsula, and enjoy its stunning views. Relax on the pristine beaches of Palamutbükü and Hayıtbükü, known for their clear waters and peaceful atmosphere. Explore the local markets and indulge in fresh seafood. Take a boat trip to the secluded coves and bays around Datça for a day of swimming and sunbathing."
+        }
+    ]
+}
