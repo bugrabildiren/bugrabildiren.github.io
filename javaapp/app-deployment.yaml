@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javaapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javaapp
+  template:
+    metadata:
+      labels:
+        app: javaapp
+    spec:
+      containers:
+      - name: javaapp
+        image: bgrbldrn/javaapp:1.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:postgresql://postgres:5432/javadb
+        - name: SPRING_DATASOURCE_USERNAME
+          value: demo
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: example
+        ports:
+        - containerPort: 8080

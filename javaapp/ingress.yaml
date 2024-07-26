@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: javaapp-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: javaapp.local
+    http:
+      paths:
+      - path: /local
+        pathType: Prefix
+        backend:
+          service:
+            name: javaapp
+            port:
+              number: 8080
